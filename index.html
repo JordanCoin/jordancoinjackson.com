@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jordan Coin Jackson</title>
+<meta name="description" content="Builder and writer. Detroit-made, DC-based. Test prep, book clubs, Discord tools, and open source for AI coding agents.">
+<meta property="og:title" content="Jordan Coin Jackson">
+<meta property="og:description" content="Builder and writer. Detroit-made, DC-based.">
+<meta property="og:image" content="https://jordancoinjackson.com/assets/jordan.png">
+<meta property="og:url" content="https://jordancoinjackson.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: oklch(97.2% 0.011 85);
+  --paper-deep: oklch(94.5% 0.016 83);
+  --ink: oklch(24% 0.02 60);
+  --ink-soft: oklch(40% 0.018 60);
+  --rule: oklch(85% 0.02 80);
+  --terracotta: oklch(62% 0.13 40);
+  --terracotta-deep: oklch(52% 0.13 38);
+  --teal: oklch(38% 0.06 190);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: oklch(21% 0.015 55);
+    --paper-deep: oklch(25% 0.018 55);
+    --ink: oklch(90% 0.02 85);
+    --ink-soft: oklch(72% 0.02 80);
+    --rule: oklch(34% 0.02 60);
+    --terracotta: oklch(70% 0.13 42);
+    --terracotta-deep: oklch(78% 0.12 45);
+    --teal: oklch(75% 0.07 190);
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
+  line-height: 1.62;
+  min-height: 100vh;
+}
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5.5rem) clamp(1.25rem, 5vw, 2.5rem) 4rem;
+}
+a { color: inherit; text-decoration-color: color-mix(in oklch, var(--terracotta) 55%, transparent); text-underline-offset: 3px; transition: text-decoration-color .15s ease-out, color .15s ease-out; }
+a:hover { color: var(--terracotta-deep); text-decoration-color: var(--terracotta-deep); }
+
+/* ---------- masthead ---------- */
+header { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: end; padding-bottom: 1.4rem; border-bottom: 3px double var(--rule); }
+h1 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: clamp(2.3rem, 1.6rem + 3.4vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+h1 .coin { color: var(--terracotta); font-style: italic; font-weight: 400; }
+.tagline { margin-top: .7rem; color: var(--ink-soft); font-size: 1.05em; }
+.portrait {
+  width: clamp(5.2rem, 4rem + 5vw, 7.5rem);
+  height: clamp(5.2rem, 4rem + 5vw, 7.5rem);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--terracotta);
+}
+
+/* ---------- intro ---------- */
+.intro { margin: 2.4rem 0 0; max-width: 40rem; }
+.intro p + p { margin-top: 1rem; }
+.intro em { color: var(--teal); font-style: italic; }
+
+/* ---------- ledger sections ---------- */
+section { margin-top: clamp(3rem, 7vw, 4.5rem); }
+.section-label {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: .82rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--terracotta-deep);
+  display: flex; align-items: center; gap: 1rem;
+}
+.section-label::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
+.section-note { color: var(--ink-soft); font-style: italic; font-size: .92em; margin-top: .35rem; }
+
+.ledger { margin-top: 1.6rem; list-style: none; }
+.ledger li { display: grid; grid-template-columns: 1fr auto; gap: .3rem 1.25rem; align-items: baseline; padding: 1.05rem 0; border-bottom: 1px solid var(--rule); }
+.ledger li:first-child { border-top: 1px solid var(--rule); }
+.entry-name { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.14em; }
+.entry-name a { text-decoration: none; border-bottom: 2px solid color-mix(in oklch, var(--terracotta) 45%, transparent); }
+.entry-name a:hover { border-bottom-color: var(--terracotta-deep); }
+.entry-status {
+  grid-row: 1; grid-column: 2;
+  font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-soft); white-space: nowrap;
+  font-family: "Newsreader", serif;
+}
+.entry-status.earning { color: var(--terracotta-deep); }
+.entry-desc { grid-column: 1 / -1; color: var(--ink-soft); font-size: .95em; max-width: 38rem; }
+
+/* stars column for open source */
+.stars { font-variant-numeric: tabular-nums; }
+
+/* ---------- writing ---------- */
+.pubs { margin-top: 1.6rem; display: grid; gap: 1.35rem; }
+.pub { padding-left: 1.1rem; border-left: 3px solid var(--rule); }
+.pub:hover { border-left-color: var(--terracotta); }
+.pub-name { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.1em; }
+.pub-name a { text-decoration: none; }
+.pub-name a:hover { color: var(--terracotta-deep); }
+.pub p { color: var(--ink-soft); font-size: .95em; margin-top: .15rem; }
+
+/* ---------- now ---------- */
+.now p + p { margin-top: 1rem; }
+.now { margin-top: 1.4rem; max-width: 40rem; }
+
+/* ---------- footer ---------- */
+footer { margin-top: clamp(3.5rem, 8vw, 5rem); padding-top: 1.5rem; border-top: 3px double var(--rule); display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; align-items: baseline; }
+.social { font-size: .95em; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.social:hover { border-bottom-color: var(--terracotta-deep); }
+.colophon { width: 100%; margin-top: 1.4rem; color: var(--ink-soft); font-size: .85em; font-style: italic; }
+
+@media (max-width: 540px) {
+  header { grid-template-columns: 1fr; }
+  .portrait { grid-row: 1; justify-self: start; }
+  .ledger li { grid-template-columns: 1fr; }
+  .entry-status { grid-row: auto; grid-column: 1; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div>
+    <h1>Jordan <span class="coin">Coin</span> Jackson</h1>
+    <p class="tagline">Builder &amp; writer. Detroit-made, Washington-DC-based.</p>
+  </div>
+  <img class="portrait" src="assets/jordan.png" alt="Jordan Coin Jackson" width="240" height="240">
+</header>
+
+<div class="intro">
+  <p>I ship software people pay for, then write about what it taught me. By day I'm a senior engineer at a consumer-finance company, building AI systems that move real money and have to be right. Nights and weekends, I run a small portfolio of my own: a test-prep company, a book-club app, community tools, and a growing shelf of open source.</p>
+  <p>The through-line is the same everywhere: <em>honest numbers, human voice, software that respects the person using it.</em></p>
+</div>
+
+<section id="earning">
+  <h2 class="section-label">Things that earn</h2>
+  <p class="section-note">Real products with real customers. No waitlists pretending to be companies.</p>
+  <ul class="ledger">
+    <li>
+      <span class="entry-name"><a href="https://socialworktestprepacademy.com">Social Work Test Prep Academy</a></span>
+      <span class="entry-status earning">earning</span>
+      <span class="entry-desc">ASWB exam prep built around an uncomfortable fact: pass rates are ~75% overall and ~45% for Black test-takers. 1,000+ questions reviewed by a practicing LCSW, AI exam simulations, $129 until you pass. Web, iOS, Android.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://apps.apple.com/us/app/hacked-summaries-ai-book-recs/id1539826611">Hacked Summaries</a></span>
+      <span class="entry-status earning">earning</span>
+      <span class="entry-desc">Audio book summaries and recommendations, grown out of Black Men Book Club. The app I built to get more people who look like me thriving through reading. iOS, 4.7★.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://afkmod.app">AFK Mod</a></span>
+      <span class="entry-status">building</span>
+      <span class="entry-desc">The only Discord moderation bot a community should need — an AI steward that watches, routes, and escalates so humans don't burn out. $59/mo.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://appreviewready.com">AppReviewReady</a></span>
+      <span class="entry-status">new</span>
+      <span class="entry-desc">App Store review readiness for first-time developers — readiness checklist, rejection decoder, queue index. Free check; passes from $19.</span>
+    </li>
+  </ul>
+</section>
+
+<section id="open">
+  <h2 class="section-label">Given away</h2>
+  <p class="section-note">Open source, mostly tooling for the AI-agent era of programming.</p>
+  <ul class="ledger">
+    <li>
+      <span class="entry-name"><a href="https://github.com/JordanCoin/codemap">codemap</a></span>
+      <span class="entry-status stars">★ 658</span>
+      <span class="entry-desc">A project brain for AI coding agents — structural ground truth so your agent stops guessing at your codebase. Go.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://github.com/JordanCoin/openfoia">openfoia</a></span>
+      <span class="entry-status">oss</span>
+      <span class="entry-desc">Local-first FOIA automation for journalists and the professionally curious.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://github.com/JordanCoin/ios-skills-collection">ios-skills-collection</a></span>
+      <span class="entry-status">oss</span>
+      <span class="entry-desc">200+ curated skills that make coding agents genuinely good at iOS work.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://github.com/JordanCoin/crap4swift">crap4swift</a></span>
+      <span class="entry-status">oss</span>
+      <span class="entry-desc">Change-risk analysis for Swift — finds the code most likely to hurt you. Ships via Homebrew.</span>
+    </li>
+    <li>
+      <span class="entry-name"><a href="https://github.com/JordanCoin">…and the rest</a></span>
+      <span class="entry-status">50+ repos</span>
+      <span class="entry-desc">docmap, Cassette, sockd, whats-next-mcp, a Homebrew tap, and whatever this week produced.</span>
+    </li>
+  </ul>
+</section>
+
+<section id="writing">
+  <h2 class="section-label">Written down</h2>
+  <div class="pubs">
+    <div class="pub">
+      <span class="pub-name"><a href="https://blackmenbookclub.substack.com">Black Men Book Club</a></span>
+      <p>Essays on books, fathers, Detroit, and becoming. The longest-running thing I make — thousands of readers.</p>
+    </div>
+    <div class="pub">
+      <span class="pub-name"><a href="https://socialworktestprepacademy.substack.com">SWTPA Newsletter</a></span>
+      <p>For social workers chasing licensure — study craft and the equity gap in plain language.</p>
+    </div>
+    <div class="pub">
+      <span class="pub-name"><a href="https://skepticsledger.substack.com">The Skeptic's Ledger</a></span>
+      <p>"Claude has my brokerage account. It mostly says no." A weekly account of the trades an A.I. refused to make — by Coin &amp; Claude.</p>
+    </div>
+    <div class="pub">
+      <span class="pub-name"><a href="https://medium.com/@coinjordan">The archive</a></span>
+      <p>The early essays (2016–2021): dropping out, getting up, learning to build.</p>
+    </div>
+  </div>
+</section>
+
+<section id="now">
+  <h2 class="section-label">Now</h2>
+  <div class="now">
+    <p>Senior iOS engineer at Koalafi, where I originated and solo-built a purchase-validation platform that lets a lender finance carts at any retailer with zero integration — and where I learned that putting an LLM on a money path is a discipline, not a demo.</p>
+    <p>Increasingly writing and speaking about <em>AI in consumer finance for underserved markets</em> — the intersection where I live: the systems, the fairness math, and the people the credit system was not built for. If that's your world too, say hello.</p>
+  </div>
+</section>
+
+<footer>
+  <a class="social" href="https://github.com/JordanCoin">GitHub</a>
+  <a class="social" href="https://x.com/jordanwcjackson">X</a>
+  <a class="social" href="https://www.linkedin.com/in/jordan-coin-jackson/">LinkedIn</a>
+  <a class="social" href="https://substack.com/@audiobookclub">Substack</a>
+  <a class="social" href="https://www.instagram.com/jordancoin/">Instagram</a>
+  <a class="social" href="mailto:jordancoinjackson@gmail.com">Email</a>
+  <p class="colophon">Handmade in DC — one HTML file, no framework, no trackers. Ledger ruled by hand. © 2026 Jordan Coin Jackson / JWC Holdings LLC.</p>
+</footer>
+
+</div>
+</body>
+</html>
