@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I Went From a Depressed College Dropout to a Software Engineer — Life & Times</title>
+<meta name="description" content="Life is a struggle. To happiness, to expression, to love. I’ve had my struggles too. Depression is the struggle I went through. My alarm kept going ov">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: oklch(97.2% 0.011 85); --paper-deep: oklch(94.5% 0.016 83);
+  --ink: oklch(24% 0.02 60); --ink-soft: oklch(40% 0.018 60);
+  --rule: oklch(85% 0.02 80); --terracotta: oklch(62% 0.13 40);
+  --terracotta-deep: oklch(52% 0.13 38); --teal: oklch(38% 0.06 190);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: oklch(21% 0.015 55); --paper-deep: oklch(25% 0.018 55);
+    --ink: oklch(90% 0.02 85); --ink-soft: oklch(72% 0.02 80);
+    --rule: oklch(34% 0.02 60); --terracotta: oklch(70% 0.13 42);
+    --terracotta-deep: oklch(78% 0.12 45); --teal: oklch(75% 0.07 190);
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem); line-height: 1.68; }
+.page { max-width: 42rem; margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2.5rem) 4rem; }
+a { color: inherit; text-decoration-color: color-mix(in oklch, var(--terracotta) 55%, transparent); text-underline-offset: 3px; }
+a:hover { color: var(--terracotta-deep); }
+.crumb { font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+.crumb:hover { color: var(--terracotta-deep); }
+.masthead { padding-bottom: 1.1rem; border-bottom: 3px double var(--rule); display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.blogname { font-family: "Fraunces", serif; font-weight: 900; font-size: 1.25rem; text-decoration: none; }
+.blogname .amp { color: var(--terracotta); font-style: italic; font-weight: 400; }
+h1.post-title { font-family: "Fraunces", serif; font-weight: 900; font-size: clamp(1.9rem, 1.4rem + 2.4vw, 3rem); line-height: 1.08; letter-spacing: -0.01em; margin: 2.2rem 0 .5rem; }
+.post-date { font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; color: var(--terracotta-deep); }
+.prose { margin-top: 1.8rem; }
+.prose p { margin: 0 0 1.1rem; }
+.prose img { max-width: 100%; height: auto; border: 1px solid var(--rule); margin: 1.4rem 0; }
+.prose h1, .prose h2, .prose h3 { font-family: "Fraunces", serif; font-weight: 600; margin: 2rem 0 .7rem; line-height: 1.2; }
+.prose blockquote { border-left: 3px solid var(--terracotta); padding-left: 1.1rem; color: var(--ink-soft); font-style: italic; margin: 1.4rem 0; }
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.4rem; }
+.prose code { background: var(--paper-deep); padding: .1em .35em; font-size: .9em; }
+.prose pre { background: var(--paper-deep); padding: 1rem; overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--rule); }
+.prose pre code { background: none; padding: 0; }
+.postlist { list-style: none; margin-top: 2rem; }
+.postlist li { display: grid; grid-template-columns: 1fr auto; gap: .2rem 1.25rem; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.postlist li:first-child { border-top: 1px solid var(--rule); }
+.postlist .t { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.12em; }
+.postlist .t a { text-decoration: none; border-bottom: 2px solid color-mix(in oklch, var(--terracotta) 45%, transparent); }
+.postlist .t a:hover { border-bottom-color: var(--terracotta-deep); }
+.postlist .d { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; }
+.postlist .s { grid-column: 1 / -1; color: var(--ink-soft); font-size: .93em; }
+.foot { margin-top: 3.5rem; padding-top: 1.3rem; border-top: 3px double var(--rule); color: var(--ink-soft); font-size: .85em; font-style: italic; }
+@media (max-width: 540px) { .postlist li { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="masthead">
+  <a class="blogname" href="/blog/">Life <span class="amp">&amp;</span> Times</a>
+  <a class="crumb" href="/">← jordancoinjackson.com</a>
+</nav>
+<p class="post-date" style="margin-top:2.2rem">August 22, 2019</p>
+<h1 class="post-title" style="margin-top:.3rem">How I Went From a Depressed College Dropout to a Software Engineer</h1>
+<div class="prose">
+<p>Life is a struggle. To happiness, to expression, to love. I’ve had my struggles too. Depression is the struggle I went through.</p>
+
+<p>My alarm kept going over. BEEP BEEP BEEP BEEP. I hated that noise. But I wouldn’t dare get out of bed.
+I remember when I was 14 and my great aunt passed away and it hit me like a ton of bricks. A feeling of hopelessness began, and school, my family situation, and being a weird kid who only stayed awake in class to watch history documentaries. All I wanted was to find an isolated corner in the world and live in it. I was raised as an only child and my father was in and out of my life until I was 10. Coding was far from my mind, I was wrapped in my own life and my own pain. It took time to recognize the potential within myself, that I could do anything I wanted.
+But it wasn’t that clear, and my potential wasn’t something high at all. We all have defining moments in life that you try to escape from because of the pain. It’s always sharp when you think of it and it’s a battle to get through. I didn’t know as a kid how to really deal with it, and my experiences through it helped craft me today. But in college? They weren’t going well.
+Running Without Purpose
+At 2:30 AM, Monday, during the first week of school I got off the phone with a girl I liked. The call didn’t go well. And the relationship had ended. I was on and off with her since high school and it hurt. My days sorta became the same after a while. The alarm going off at 7 am for my 8:30 class and putting it to sleep. Again and again. Before I looked back it was 11. Then at 2 Pm. Then 5… That day, in particular, was bad because of the end of a relationship. I was depressed. School had always been tough for me, and the lack of self-confidence I had created a bad cycle of really enjoying going out and letting my pain out through random good times to isolating myself completely and being ready to drop all the classes that semester. I closed out the world and found ways to keep myself in a perpetual state that spanned weeks and months. Depression for me happened in cycles. I would go on a binge where I couldn’t get out of bed. Where life seemed like too much. To then back to a more productive, happy, person.</p>
+
+<p>Dropping Out of College
+It couldn’t last. I stopped going to classes. It felt like a bench press 50 pounds over my max. Things don’t drop fast, they gradually fall until you have nothing left to give. And you let it slip. I decided after my first semester that the combination of the price of school and my mental state couldn’t be rationalized. Feeling like you failed yourself is one thing, but to believe you have failed your family, friends, and community was another. I was supposed to be different than my father. I was supposed to make something out of myself. I failed.
+As a black man, there isn’t a lot of conversation about depression in the community. Almost as if emotional wellness isn’t something to be referred to as a remedy to problems. It’s physical, and a ‘get your shit together’ attitude. So I felt weak for being depressed and not wanting to live in a world that I felt so much pain from.
+“To get out of depression, you need to find your exotic connection.”
+― Talismanist Giebra
+When I got back to living at my mom’s house in Michigan, moving my stuff in the same room I slept in as a child it hit me, getting a job for $7.40 an hour working part-time at a movie theatre up the street, and missing out on all my friends having fun together at the school I left. I knew deep down that this was a chance for me to re-align. I had no school to go back to, and I had all the time in the world to begin to create. To have a vision materialize in any and every way.</p>
+
+<p>Building Creative Passion
+I started doing video editing on Fiverr as a way to make some extra money. I wasn’t always a very good editor but I got better through working on project after project. Getting $5 here or $20 for a bigger project meant a lot to a depressed kid who didn’t really think much of himself let alone his skills.
+One of the ways I fought through my depression was writing. I journaled so much of my life through short stories and poems. Bleeding reality to create a medium of writing that made me feel good and able to let it out in a way that wasn’t destructive and pretty productive. I decided I could make something out of all these pieces of work. I created a book full of poems that told a story. I published it on Amazon for anyone to read and loved every step in the process. I learned a bunch about self-publishing and working on building a product. It sold about 5 copies. But I felt on top of the world looking at it. It was exhilarating.
+Startup Dreams
+I didn’t know where I was going when Rodney ”RJ” Gainous Jr and D&rsquo;Andre asked me to join them at Puricode. I went under the wing of Rodney and Noah Passalacqua for engineering and D’Andre for product and business. I played the role of the middle man doing anything and everything wearing many hats to get the job done. When we began building our flagship product Runn we began working non-stop. Long hours at Bamboo, days filled with calls, coding, and energy drinks. Thinking through the product and negotiations with schools and VC’s. Runn was an on-demand delivery company in 2013 and being on the forefront of a market like that gave me a worldly perspective on creating lasting visions. Failure came to Runn as most startups do, but the lessons learned are compiled I like to call my Startup MBA.
+I came into the startup world by accident. I was never a business kinda guy, (I kinda grew up being directed that business was inherently bad.) I mean, I loved storytelling and film. When Runn ended and I was back home with part-time jobs living off a dream I knew I had to make a move to transport me. I took a leap.
+Finding Yourself Outside of College
+I moved out to LA for 8 months to keep working at my writing. I went into a different discipline in writing from poetry to screenwriting and I wanted to sell a big script. I lucked out with a family member in LA who let me crash on her couch. I wrote and wrote but felt as though maybe I was setting myself short trying to please producers and movers and shakers in the city. Tech was on my mind. Developing my own stuff was what I really wanted. I was never that person. So I went home.</p>
+
+<p>It’s hard to find yourself when you make your own path. There are not many people to look to especially when you’re shooting for something big. There are no rules and there are no guarantees. I’ve failed at many things in my life, fighting and clawing my way through ideas and versions of myself that aren’t me. Just in the hopes to make money or develop a skill that I could see myself in for the rest of my life.
+When I landed back in Detroit and got a job at a local library as a computer page it hit me. I needed to let that all go. There was no way I was going to fall into something I enjoyed if I was constantly comparing and contrasting my life. Doubting myself because of failures and putting a cap on my potential because I felt disadvantaged. That’s always going to be there and it’ll always be a quick way to self-doubt. What’s the best advice I can give someone? Live in your peace and trust yourself. It led me back to tech and into a new field I didn’t even expect.
+Learning to Code — Connecting the dots
+Coding had always been something I thought was out of reach. I was never good at math, I had failed out of school, and felt like an artist wasn’t an engineer. It didn’t seem like I could do it. And that attitude kept me away from it for a while. I had dabbled in coding for a few years — trying (and failing) to make websites — and wasn’t very happy with it. I decided to try mobile, I had a Macbook Pro I paid for with credit and downloaded Xcode to give it a shot.
+This ended up being one of the best decisions of my life.</p>
+
+<p>I began to immerse myself. In ways that I never expected possible. Coding was a barrier before, but it began to open up. I started with Swift, the newish programming language Apple launched as the new defacto language for iOS App Development. I had an interest in other languages, primarily Python, but the barrier for me was higher. I’m a visual person at heart and it was increasingly difficult to feel the same type of reward from the visuals of a great mobile app vs a numpy graph. I think it’s really important to understand your strengths and weaknesses when it comes to your learning style and projection graph.
+From school, I knew numbers and essays didn’t give me a runway to express myself like I am today. So when working on figuring out where to begin, I respected how I thought, unlike the school system that teaches robotic behavior. I was a film nerd, writing fanatic, art-loving weirdo and needed the visual aesthetic, a story that could be told in a new way, as a gateway to coding. iOS is one of the few platforms where those things were served and also had a somewhat easy to learn language with Swift.
+I dove deeper and took courses on Udemy.com, watched video lessons all across Youtube, went to developer and blockchain events with Noah, took a Udacity iOS Nanodegree program, and got contracts from local businesses that needed apps. Over 2 years I build 10+ apps and launched 1 in the app store. All for really the love and the practice. But working at my job at the library began to get harder. Limited hours and money made me not feel like it was sustainable. I decided it was time to look for a new position as a Software Engineer.
+The Interview Grind
+I began applying for jobs. I didn’t have any expectations and thought I wasn’t ready for it. But I kept on anyway. Rodney ”RJ” Gainous Jr and Madala kept me at it. I applied to every company that was hiring. Local and places like LA, SF, and NY. I learned through experience with technical interviews, questions to expect, the process of showing what’s important. Being more comfortable and open to showing who I was the depression that used to haunt me constantly began to fade away. Lapses would happen less often, for a shorter amount of time. Things became better before I landed my interview with Quicken Loans. I think in the process of it I became clearer and more defined. Not confined to my failures or my successes. Able to see beyond.</p>
+
+<p>The Finish Line
+I remember leaving work on a Friday afternoon and sitting in my car when I got the final call from the recruiter. I got the job. I was surprised and a little shook by it. I thanked them and hung up. I sat in my car for a minute and began to think back at all the things I went through to get to this point. All of the long days and nights working. All of the long days and nights feeling like the walls were going to collapse in on me. To believe I am the same person as I then seemed unrealistic. But the more I feel that truth, the more I see that we are all the same. That my story isn’t special, it’s inherent in us to supplant our own suffering. Today I work as a Software Engineer with a great job and a positive, filling outlook on the next stages in my life. Building products and side projects while I bring value to my job. There is a hope I have that wasn’t there and a creative passion that seems to be growing brighter and brighter. It’s been a hell of a journey.
+Anyone can do it. Just keep pushing, surprise yourself with your greatness. Peace ✌🏽.
+— Jordan
+Thanks for reading, if you enjoyed — ⬇️⬇️ check out the links below! ⬇️⬇️
+Twitter 🐦 → <a href="https://twitter.com/jordanwcjackson">https://twitter.com/jordanwcjackson</a> ←
+Instagram 📸 → <a href="https://www.instagram.com/jordancoin/">https://www.instagram.com/jordancoin/</a> ←</p>
+</div>
+
+<p class="foot">Life &amp; Times ran 2016–2019 on the old site. Preserved here, re-set by hand. © Jordan Coin Jackson.</p>
+</div>
+</body>
+</html>

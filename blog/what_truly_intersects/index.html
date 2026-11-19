@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Truly Intersects — Life & Times</title>
+<meta name="description" content="This is a continuation of an article I wrote here. As well as a response to comments from a post I made from a twitter reply I made to a post about th">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: oklch(97.2% 0.011 85); --paper-deep: oklch(94.5% 0.016 83);
+  --ink: oklch(24% 0.02 60); --ink-soft: oklch(40% 0.018 60);
+  --rule: oklch(85% 0.02 80); --terracotta: oklch(62% 0.13 40);
+  --terracotta-deep: oklch(52% 0.13 38); --teal: oklch(38% 0.06 190);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: oklch(21% 0.015 55); --paper-deep: oklch(25% 0.018 55);
+    --ink: oklch(90% 0.02 85); --ink-soft: oklch(72% 0.02 80);
+    --rule: oklch(34% 0.02 60); --terracotta: oklch(70% 0.13 42);
+    --terracotta-deep: oklch(78% 0.12 45); --teal: oklch(75% 0.07 190);
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem); line-height: 1.68; }
+.page { max-width: 42rem; margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2.5rem) 4rem; }
+a { color: inherit; text-decoration-color: color-mix(in oklch, var(--terracotta) 55%, transparent); text-underline-offset: 3px; }
+a:hover { color: var(--terracotta-deep); }
+.crumb { font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+.crumb:hover { color: var(--terracotta-deep); }
+.masthead { padding-bottom: 1.1rem; border-bottom: 3px double var(--rule); display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.blogname { font-family: "Fraunces", serif; font-weight: 900; font-size: 1.25rem; text-decoration: none; }
+.blogname .amp { color: var(--terracotta); font-style: italic; font-weight: 400; }
+h1.post-title { font-family: "Fraunces", serif; font-weight: 900; font-size: clamp(1.9rem, 1.4rem + 2.4vw, 3rem); line-height: 1.08; letter-spacing: -0.01em; margin: 2.2rem 0 .5rem; }
+.post-date { font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; color: var(--terracotta-deep); }
+.prose { margin-top: 1.8rem; }
+.prose p { margin: 0 0 1.1rem; }
+.prose img { max-width: 100%; height: auto; border: 1px solid var(--rule); margin: 1.4rem 0; }
+.prose h1, .prose h2, .prose h3 { font-family: "Fraunces", serif; font-weight: 600; margin: 2rem 0 .7rem; line-height: 1.2; }
+.prose blockquote { border-left: 3px solid var(--terracotta); padding-left: 1.1rem; color: var(--ink-soft); font-style: italic; margin: 1.4rem 0; }
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.4rem; }
+.prose code { background: var(--paper-deep); padding: .1em .35em; font-size: .9em; }
+.prose pre { background: var(--paper-deep); padding: 1rem; overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--rule); }
+.prose pre code { background: none; padding: 0; }
+.postlist { list-style: none; margin-top: 2rem; }
+.postlist li { display: grid; grid-template-columns: 1fr auto; gap: .2rem 1.25rem; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.postlist li:first-child { border-top: 1px solid var(--rule); }
+.postlist .t { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.12em; }
+.postlist .t a { text-decoration: none; border-bottom: 2px solid color-mix(in oklch, var(--terracotta) 45%, transparent); }
+.postlist .t a:hover { border-bottom-color: var(--terracotta-deep); }
+.postlist .d { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; }
+.postlist .s { grid-column: 1 / -1; color: var(--ink-soft); font-size: .93em; }
+.foot { margin-top: 3.5rem; padding-top: 1.3rem; border-top: 3px double var(--rule); color: var(--ink-soft); font-size: .85em; font-style: italic; }
+@media (max-width: 540px) { .postlist li { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="masthead">
+  <a class="blogname" href="/blog/">Life <span class="amp">&amp;</span> Times</a>
+  <a class="crumb" href="/">← jordancoinjackson.com</a>
+</nav>
+<p class="post-date" style="margin-top:2.2rem">August 7, 2019</p>
+<h1 class="post-title" style="margin-top:.3rem">What Truly Intersects</h1>
+<div class="prose">
+<p><img src="https://miro.medium.com/max/4800/1*KCBwzBezXbCcG-4idrqoZA.jpeg" alt="" /></p>
+
+<p>This is a continuation of an article I wrote <a href="https://www.jordancoinjackson.com/blog/the-school-is-on-fire/">here</a>.</p>
+
+<p>As well as a response to comments from a post I made from a <a href="https://twitter.com/jordanwcjackson/status/1112015673834778624?s=20">twitter reply</a> I made to a post about this topic.</p>
+
+<h2 id="the-social-vision">The Social Vision</h2>
+
+<p>Ideas have power. That power has let Liberals institute a social policy that hasn’t given the returned value for a people voting 90% Democratic. Black Americans were sold a coupled package. They received integration and fleeing white population from major cities. What they asked for was de-segregation and equality of opportunity. Liberalism has punctured a hole in reality for many. Good feelings and well-spoken words can cloud judgment, especially in confusing times where things are moving faster than ever. Especially when those with unlimited power and clout hold the reigns of social justice. Black peoples are still poor. Black people don’t stay together as a family. How do these fallacies begin?</p>
+
+<p>Our differences are our strength. That’s what I was taught going to a Quaker elementary school in Detroit. What decides what intersects to create a human condition worth acknowledging? I am a product of multiculturalism. My family is full of people that lived the experience of trying to build a world full of acceptance beyond race. Like Barack Obama, people have assumed I was racially confused and couldn’t decide if I were white or black. But just as he said.
+&gt; # <em>“The concept of race in America is not just genetic…it’s cultural.” — Barack Obama</em></p>
+
+<p>I am aware I may not fit stereotypical black talk, walk, and act. But times are different. And I don’t believe in stereotyping Black people because of whatever assumptions culture makes. There is no archetype for all black people. We range through the spectrum of thought and ideas just like any other. It is just waking up to the fact politically is one of the last vestiges — in my opinion — of truly powerful and dramatic racial control. Fear and handouts have created an era of dependence. Coupled with an age of intersectionality (if you believe it to the extent that it affects your decision making at that level) being with a white person in a relationship, whether male or female, with a Black person, forces people to pick racial sides for the soul. Your race or your love.</p>
+
+<p>If you are apart of a marginalized community and date outside of that community the assumption is that the non-marginalized partner will not be able to relate and cope with the daily battle and struggle of being a marginalized person in the United States of America. Because of race, there should be a built-in assumption that your relationship is possibly a fetishized dream of the non-marginalized unconsciously using you to stake control over your body.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*ok5qOzGACZGOs4Y2rW3lnA.png" alt="" /></p>
+
+<h2 id="but-what-truly-intersects">But What Truly Intersects?</h2>
+
+<p>I believe that what truly intersects in life has far more weight than the pain of racism, sexism, or any other creator of suffering based on who you are, where you were born, or your social status. During the Holocaust Viktor E. Frankl the author of Man’s Search for Meaning was kidnapped and taken to a Nazi concentration camp. In his book he talked about how brutal the world was around him, claiming that seeing death is one thing, but smelling the rotting corpses is another. Something so brutally evil it is almost unconscionable to happen today. But even in this pain, he would write — I saw people smile and work together in a camaraderie that transcended their individual suffering as people and collective suffering produced by the evil they were experiencing in real-time.
+&gt; “For the first time in my life I saw the truth as it is set into song by so many poets, proclaimed as the final wisdom by so many thinkers. The truth — that Love is the ultimate and highest goal to which man can aspire. Then I grasped the meaning of the greatest secret that human poetry and human thought and belief have to impart: The salvation of man is through love and in love.” — <strong>Viktor E. Frankl, Man’s Search for Meaning</strong></p>
+
+<p>It could have been anyone of any time. So does intersectionality remove the possibility for people of different races loving each other? In a strange way, it has a pull too. If humanity isn’t paramount. If the value of the person in front of you is not enough as a flesh and blood entity that is with you on this journey of life and death. Is my tribe all that is to the bounds of my life? It has never been. I think it is fair to ask the question, has your idea gone to a point of irrationality to serve its means? What value do you create to dispel racism if the enemy is your significant other?</p>
+
+<p>The trap of intersectionality is that because of your marginalization people cannot relate to your suffering. An arrogance that may be so blindly toxic especially related to African American’s whose Civil Rights generation fought for their rights using social action based on getting eyes on the newly invented television to show the dignity and strength of non-violent protest. White people watched the TV. They weren’t being allies. They became allies after a persuasive argument of the fact that human dignity was HIGHER than the color of anyone&rsquo;s skin. Intersectionality speaks to a dystopia. Where Black shall be Black and the oppressors boot snaps the neck harder and harder every time you pounce towards it. In a world full of evil white people maybe it makes sense. But we do not live in a world of slave masters. White people do not own a drop of me and have no ability to attempt to remove my intelligence or fortitude for my family and my people. But in no way should that create a sense of isolationism against other American’s and whites around the globe that DO have our back. The ones that fought on the front lines with Dr.King. And the ones who stand against bigotry. What intersects truly is love, not the tribe.</p>
+</div>
+
+<p class="foot">Life &amp; Times ran 2016–2019 on the old site. Preserved here, re-set by hand. © Jordan Coin Jackson.</p>
+</div>
+</body>
+</html>
